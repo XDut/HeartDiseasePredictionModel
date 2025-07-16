@@ -23,3 +23,23 @@ The main components of the project include the following:
 # Usage
 
 Run the flask server and send a POST request to / to use the ML model API.
+
+The POST request should be a JSON object with the following schema:
+
+```ts
+{
+    "age": number,
+    "sex": number,
+    "cp": number,
+    "trestbps": number,
+    "chol": number,
+    "fbs": number,
+    "restecg": number,
+    "thalach": number,
+    "exang": number,
+    "oldpeak": number,
+    "slope": number,
+    "ca": number,
+    "thal": number
+}
+```
